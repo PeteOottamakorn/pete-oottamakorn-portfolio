@@ -7,18 +7,18 @@ function Navigation() {
 
   return (
     <>
-      <Nav className="justify-content-end">
+      <Nav className="justify-content-end" sticky='top'>
         <Nav.Item>
-          <Nav.Link href="/">About</Nav.Link>
+          <Nav.Link id='nav-link' href="/">About</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+          <Nav.Link id='nav-link' href="/portfolio">Portfolio</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/contact">Contact</Nav.Link>
+          <Nav.Link id='nav-link' href="/contact">Contact</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/resume">Resume</Nav.Link>
+          <Nav.Link id='nav-link' href="/resume">Resume</Nav.Link>
         </Nav.Item>
       </Nav>
     </>
