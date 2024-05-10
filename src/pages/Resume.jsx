@@ -1,13 +1,21 @@
+import { Container, Row, Col } from "react-bootstrap";
+
 export default function Resume() {
   return (
-    <div>
-      <h1>Resume</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-        architecto minima id officiis, quia aperiam reiciendis hic ut. Quod,
-        reiciendis odio! A nostrum adipisci commodi saepe, ducimus odio ex
-        incidunt!
-      </p>
-    </div>
+    <Container className="justify-content-start">
+      <Row>
+        <Col></Col>
+        <Col md="auto">
+          <h1>Resume</h1>
+          <h3>Languages</h3>
+          <ul>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </Col>
+        <Col></Col>
+      </Row>
+    </Container>
   );
 }

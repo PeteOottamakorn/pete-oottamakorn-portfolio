@@ -1,13 +1,33 @@
+import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-        architecto minima id officiis, quia aperiam reiciendis hic ut. Quod,
-        reiciendis odio! A nostrum adipisci commodi saepe, ducimus odio ex
-        incidunt!
-      </p>
-    </div>
+    <Container className="container pt-4">
+      <Row>
+        <Col></Col>
+        <Col md="auto">
+          <h1>Contact</h1>
+        </Col>
+        <Col></Col>
+      </Row>
+      <Row>
+        <p>
+          Feel free to reach out to me! I'm available and open to any work,
+          freelance or otherwise!
+        </p>
+      </Row>
+      <Row>
+        <p>Email: poottamakorn@gmail.com</p>
+      </Row>
+      <Row>
+        <p>
+          GitHub:{" "}
+          <Link to="https://github.com/PeteOottamakorn">
+            https://github.com/PeteOottamakorn
+          </Link>
+        </p>
+      </Row>
+    </Container>
   );
 }
