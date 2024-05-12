@@ -4,11 +4,7 @@ import Navigation from "./Navigation";
 function Header() {
   const [] = useState("");
 
-  return (
-    <div>
-      <h1></h1>
-    </div>
-  );
+  return <Navigation />;
 }
 
 export default Header;

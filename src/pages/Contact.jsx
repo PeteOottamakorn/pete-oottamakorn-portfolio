@@ -6,7 +6,7 @@ export default function Contact() {
     <Container className="container pt-4">
       <Row>
         <Col></Col>
-        <Col md="auto">
+        <Col className="text-center" md="auto">
           <h1>Contact</h1>
         </Col>
         <Col></Col>

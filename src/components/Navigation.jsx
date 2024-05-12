@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, NavLink } from "react-router-dom";
 import Contact from "../pages/Contact";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
@@ -8,28 +8,50 @@ function Navigation() {
 
   return (
     <Navbar sticky="top">
-      <h1 id="nav-name">Pete Oottamakorn</h1>
+      <Container>
+        <h1 id="nav-name">Pete Oottamakorn</h1>
+      </Container>
       <Container className="justify-content-end">
         <Nav>
           <Nav.Item>
-            <Nav.Link id="nav-link" href="/">
+            <NavLink
+              id="navlink"
+              to="/"
+              className="nav-link"
+              // className={(isActive) => "nav-link" + (!isActive ? "active" : "")}
+            >
               About
-            </Nav.Link>
+            </NavLink>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link id="nav-link" href="/portfolio">
+            <NavLink
+              id="navlink"
+              to="/portfolio"
+              className="nav-link"
+              // className={(isActive) => "nav-link" + (!isActive ? "active" : "")}
+            >
               Portfolio
-            </Nav.Link>
+            </NavLink>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link id="nav-link" href="/contact">
+            <NavLink
+              id="navlink"
+              to="/contact"
+              className="nav-link"
+              // className={(isActive) => "nav-link" + (!isActive ? "active" : "")}
+            >
               Contact
-            </Nav.Link>
+            </NavLink>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link id="nav-link" href="/resume">
+            <NavLink
+              id="navlink"
+              to="/resume"
+              className="nav-link"
+              // className={(isActive) => "nav-link" + (!isActive ? "active" : "")}
+            >
               Resume
-            </Nav.Link>
+            </NavLink>
           </Nav.Item>
         </Nav>
       </Container>
