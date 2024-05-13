@@ -42,6 +42,8 @@ body {
 }
 
 li {
+  font-weight: 600;
+  font-size: larger;
   list-style-type: circle;
 }
 
@@ -81,6 +83,19 @@ li {
 .active {
   font-weight: bold;
   color: var(--blue-0) !important;
+}
+
+.contact-submit {
+  margin: 15px 5px 15px 5px;
+}
+
+#downloadLink {
+  color: var(--blue-5);
+  text-decoration: none;
+}
+
+#downloadLink:hover {
+  color: var(--blue-0);
 }
 
 #footer {

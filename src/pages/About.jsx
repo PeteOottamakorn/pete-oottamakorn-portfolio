@@ -4,10 +4,10 @@ export default function About() {
   return (
     <Container className="container pt-4">
       <Row>
-        <Col>
-          <Image />
+        <Col id="portrait">
+          <Image src="images/Portrait.png" fluid />
         </Col>
-        <Col className="text-center" md="auto">
+        <Col md="auto">
           <h1>Hello there!</h1>
           <p>
             My name is Pete! I'm a full stack web developer with a preference
@@ -15,7 +15,6 @@ export default function About() {
             Bootstrap accented with my knowledge of Javascript, HTML, and CSS.
           </p>
         </Col>
-        <Col></Col>
       </Row>
     </Container>
   );

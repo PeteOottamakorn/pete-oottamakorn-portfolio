@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Row, Col, Card } from "react-bootstrap";
+import { Row, Col, Card, Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Project() {
   return (
