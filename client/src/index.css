@@ -14,13 +14,7 @@
   --blue-8: #032d4a;
   --blue-9: #010f19;
 
-  color-scheme: light dark;
   color: var(--blue-0);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
@@ -90,6 +84,7 @@ li {
 }
 
 #downloadLink {
+  font-size: 24px;
   color: var(--blue-5);
   text-decoration: none;
 }
@@ -110,28 +105,4 @@ li {
 
 #social-icons {
   height: 50px;
-}
-
-@media (min-width: 768px) {
-  .site-width {
-    width: 80%;
-  }
-  label {
-    width: 20%;
-  }
-  input {
-    width: 79%;
-  }
-}
-
-@media (min-width: 992px) {
-  .site-width {
-    width: 70%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .site-width {
-    width: 60%;
-  }
 }

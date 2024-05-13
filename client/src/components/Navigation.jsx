@@ -8,48 +8,28 @@ function Navigation() {
 
   return (
     <Navbar sticky="top">
-      <Container>
+      <Container fluid>
         <h1 id="nav-name">Pete Oottamakorn</h1>
       </Container>
       <Container className="justify-content-end">
         <Nav>
           <Nav.Item>
-            <NavLink
-              id="navlink"
-              to="/"
-              className="nav-link"
-              // className={(isActive) => "nav-link" + (!isActive ? "active" : "")}
-            >
+            <NavLink id="navlink" to="/" className="nav-link">
               About
             </NavLink>
           </Nav.Item>
           <Nav.Item>
-            <NavLink
-              id="navlink"
-              to="/portfolio"
-              className="nav-link"
-              // className={(isActive) => "nav-link" + (!isActive ? "active" : "")}
-            >
+            <NavLink id="navlink" to="/portfolio" className="nav-link">
               Portfolio
             </NavLink>
           </Nav.Item>
           <Nav.Item>
-            <NavLink
-              id="navlink"
-              to="/contact"
-              className="nav-link"
-              // className={(isActive) => "nav-link" + (!isActive ? "active" : "")}
-            >
+            <NavLink id="navlink" to="/contact" className="nav-link">
               Contact
             </NavLink>
           </Nav.Item>
           <Nav.Item>
-            <NavLink
-              id="navlink"
-              to="/resume"
-              className="nav-link"
-              // className={(isActive) => "nav-link" + (!isActive ? "active" : "")}
-            >
+            <NavLink id="navlink" to="/resume" className="nav-link">
               Resume
             </NavLink>
           </Nav.Item>
