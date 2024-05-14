@@ -1,6 +1,7 @@
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -9,14 +10,26 @@ export default function Contact() {
     message: "",
   });
 
+  const form = useRef();
+
   //Handle submission of contact email
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     try {
-      console.log(`Entered try statement`);
       //Code to call API and send email will go here
-
+      emailjs
+        .sendForm("service_20lzqgk", "template_o7xbnxr", form.current, {
+          publicKey: "ja4xfwB-Ds2wMT4ix",
+        })
+        .then(
+          () => {
+            console.log(`Email sent!`);
+          },
+          (error) => {
+            console.log(`Email failed...`, error.text);
+          }
+        );
       //Clears out the input fields upon successful submission
       setFormData({
         name: "",
@@ -49,12 +62,12 @@ export default function Contact() {
       <Row>
         <Col></Col>
         <Col md={6}>
-          <Form onSubmit={handleSubmit}>
+          <Form ref={form} onSubmit={handleSubmit}>
             <Form.Group controlId="formName">
               <Form.Label>Name</Form.Label>
               <Form.Control
                 type="text"
-                name="name"
+                name="from_name"
                 onChange={handleFormChange}
               />
             </Form.Group>

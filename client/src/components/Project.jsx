@@ -37,8 +37,8 @@ function Project() {
   return (
     <Row>
       {projects.map((project) => (
-        <Col xs={12} md={6} lg={4}>
-          <Card key={project.id} className="projectCard">
+        <Col xs={12} md={6} lg={4} key={project.id}>
+          <Card className="projectCard">
             <Card.Img variant="top" src={project.image}></Card.Img>
             <Card.Body>
               <Card.Title>{project.title}</Card.Title>
