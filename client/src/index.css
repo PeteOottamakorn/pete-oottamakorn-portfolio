@@ -23,7 +23,7 @@ h1 {
 }
 
 p {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 body {
@@ -83,8 +83,23 @@ li {
   margin: 15px 5px 15px 5px;
 }
 
+.projectLink {
+  margin-right: 20px;
+  text-decoration: none;
+  color: var(--blue-6);
+}
+
+.projectLink:hover {
+  color: var(--blue-3);
+}
+
+.card {
+  margin: 10px;
+  width: auto;
+  height: auto;
+}
+
 #downloadLink {
-  font-size: 24px;
   color: var(--blue-5);
   text-decoration: none;
 }
@@ -94,15 +109,17 @@ li {
 }
 
 #footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  text-align: center;
+  margin-top: auto;
   margin-bottom: 1rem;
 }
 
 #social-icons {
   height: 50px;
+}
+
+#inactiveLink {
+  color: grey;
+  text-decoration: line-through;
 }

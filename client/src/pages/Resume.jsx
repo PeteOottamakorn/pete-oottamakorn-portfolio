@@ -1,9 +1,7 @@
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export default function Resume() {
-  const handleDownload = () => {};
-
   return (
     <Container className="justify-content-start">
       <Row>
@@ -15,9 +13,13 @@ export default function Resume() {
         <Col className="text-center">
           <h3>
             Download my resume{" "}
-            <Button variant="link" id="downloadLink" onClick={handleDownload}>
+            <a
+              href="resume/PeteOottamakornResume.pdf"
+              id="downloadLink"
+              download
+            >
               here
-            </Button>
+            </a>
           </h3>
         </Col>
       </Row>
